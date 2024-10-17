@@ -1,4 +1,4 @@
-package com.test;
+package com.client;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -11,7 +11,7 @@ import com.dao.TeamData;
 import com.entity.Player;
 import com.service.Ops;
 
-public class Main {
+public class IPL_Client {
 
 	public static void main(String[] args) throws Exception {
 
