@@ -6,14 +6,11 @@ public class TeamData {
 
 	public static String[] getTeams() {
 		String db[] = { "CSK", "DC", "GT", "KKR", "LSG", "MI", "PK", "RR", "RCB", "SRH" };
-
 		return db;
-
 	}
 
 	public static Player[] playersData() {
-//		String name; int jrcyNo; String teamName; int runs; int wickets; int matches;
-
+//	Attributes:-String name; int jrcyNo; String teamName; int runs; int wickets; int matches;
 		Player p1 = new Player("MS Dhoni", 7, "CSK", 5045, 0, 234);
 		Player p2 = new Player("Ruturaj Gaikwad", 3, "CSK", 2883, 3, 102);
 		Player p3 = new Player("Deepak Chahar", 9, "CSK", 914, 109, 90);
@@ -85,9 +82,9 @@ public class TeamData {
 		Player p60 = new Player("Abdul Samad", 32, "SRH", 2711, 34, 120);// all
 		Player p20 = new Player(" Umran Malik", 42, "SRH", 343, 15, 23);// all
 
-		Player p[] = { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p16, p17, p18, p19, p20, p21, p22,
-				p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p34, p35, p36, p37, p38, p39, p40, p41, p42, p43, p44,
-				p45, p46, p47, p48, p49, p50, p51, p52, p53, p54, p55, p56, p57, p58, p59, p60 };
+		Player p[] = { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21,
+				p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40, p41, p42,
+				p43, p44, p45, p46, p47, p48, p49, p50, p51, p52, p53, p54, p55, p56, p57, p58, p59, p60 };
 
 		return p;
 

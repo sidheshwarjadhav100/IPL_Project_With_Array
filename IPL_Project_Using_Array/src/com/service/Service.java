@@ -6,10 +6,7 @@ import com.dao.*;
 import com.entity.Player;
 
 //All opertaions perform from here
-public class Ops {
-
-	private static final String String = null;
-
+public class Service {
 	static Scanner sc = new Scanner(System.in);
 	static char c;
 	static int choice;
@@ -39,132 +36,59 @@ public class Ops {
 			switch (choice) {
 			case 1: {
 
-				Ops.csk();
+				Service.csk();
 				break;
 
 			}
 			case 2: {
 
-				Ops.dc();
+				Service.dc();
 				break;
 			}
 			case 3: {
 
-				Ops.gt();
+				Service.gt();
 				break;
 			}
 			case 4: {
 
-				Ops.kkr();
+				Service.kkr();
 				break;
 			}
 			case 5: {
 
-				Ops.lsg();
+				Service.lsg();
 				break;
 			}
 			case 6: {
 
-				Ops.mi();
+				Service.mi();
 				break;
 			}
 			case 7: {
 
-				Ops.pk();
+				Service.pk();
 				break;
 			}
 			case 8: {
 
-				Ops.rr();
+				Service.rr();
 				break;
 			}
 			case 9: {
 
-				Ops.rcb();
+				Service.rcb();
 				break;
 			}
 			case 10: {
 
-				Ops.srh();
+				Service.srh();
 				break;
 			}
 			default:
 				System.out.println("Please Enter Valid choice");
 			}
 		} while (choice > 10);
-
-//		do {
-//
-//			System.out.println("Ente Team name ...");
-//
-//			String tName = sc.next();
-//
-//			if ("csk".equalsIgnoreCase(tName)) {
-//
-//				Ops.csk();
-//
-//			} else if ("dc".equalsIgnoreCase(tName)) {
-//
-//				Ops.dc();
-//			}
-//
-//			else if ("gt".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.gt();
-//			}
-//
-//			else if ("kkr".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.kkr();
-//			}
-//
-//			else if ("lsg".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.lsg();
-//			}
-//
-//			else if ("mi".equalsIgnoreCase(tName)) {
-//				//// method call
-//
-//				Ops.mi();
-//			}
-//
-//			else if ("pk".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.pk();
-//			}
-//
-//			else if ("rr".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.rr();
-//			}
-//
-//			else if ("rcb".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.rcb();
-//			}
-//
-//			else if ("shr".equalsIgnoreCase(tName)) {
-//
-//				//// method call
-//				Ops.srh();
-//			} else {
-//				System.out.println("Please Enter Valid Team Name");
-//
-//				System.out.println("------------------");
-//
-//			}
-//
-//			System.out.println("Do you Want to see players of another teams-> y/n");
-//			c = sc.next().charAt(0);
-//
-//		} while (c == 'y');
 
 	}
 

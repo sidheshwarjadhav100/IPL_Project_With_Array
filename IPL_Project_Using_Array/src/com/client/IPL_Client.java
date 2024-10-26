@@ -1,15 +1,8 @@
 package com.client;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.file.attribute.AclEntry;
-import java.util.Scanner;
-
-import com.dao.TeamData;
-import com.entity.Player;
-import com.service.Ops;
+import com.service.Service;
 
 public class IPL_Client {
 
@@ -22,21 +15,15 @@ public class IPL_Client {
 		do {
 			System.out.println("All Teams Of IPL-2024");
 			System.out.println("------------------------");
-			Ops.displayTeam();// display all teams of IPL-2024
+			Service.displayTeam();// display all teams of IPL-2024
 			System.out.println();
-
-//		System.out.println("Enter Team Name");// enter choice team
-//		String tname = sc.next();// accept in team
-
-			Ops.getTeamName();// done till here
-			// Ops.displayTeam();
+			Service.getTeamName();
 			System.out.println("----------------------");
 
 			System.out.println("Enter Player name of above team that you want to see all details");
-			// sc.nextLine();
 			String pname = bf.readLine();
 
-			Ops.getPlayer(pname);
+			Service.getPlayer(pname);
 			System.out.println("________________________________________________");
 
 			System.out.println();
@@ -45,8 +32,6 @@ public class IPL_Client {
 			System.out.println("2.exit");
 			do {
 				choice = Integer.parseInt(bf.readLine());
-
-				// System.out.println();
 				switch (choice) {
 				case 1: {
 
@@ -59,7 +44,7 @@ public class IPL_Client {
 				}
 				default:
 					System.out.println("Please Enter Valid Choice");
-					// throw new IllegalArgumentException("Unexpected value: " + choice);
+
 				}
 			} while (choice <= 0 || choice > 2);
 
