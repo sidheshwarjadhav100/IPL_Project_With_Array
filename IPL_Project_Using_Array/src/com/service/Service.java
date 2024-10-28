@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.dao.*;
 import com.entity.Player;
 
-//All opertaions perform from here
+//All operations perform from here
 public class Service {
 	static Scanner sc = new Scanner(System.in);
 	static char c;
@@ -95,7 +95,6 @@ public class Service {
 	public static void getPlayer(String playername) {
 
 		Player[] pldata = TeamData.playersData();
-		// System.out.println(pldata);
 
 		for (Player player : pldata) {
 

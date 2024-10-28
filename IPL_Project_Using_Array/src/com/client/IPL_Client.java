@@ -2,6 +2,7 @@ package com.client;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 import com.service.Service;
 
 public class IPL_Client {
@@ -18,7 +19,6 @@ public class IPL_Client {
 			Service.displayTeam();// display all teams of IPL-2024
 			System.out.println();
 			Service.getTeamName();
-			System.out.println("----------------------");
 
 			System.out.println("Enter Player name of above team that you want to see all details");
 			String pname = bf.readLine();
@@ -38,7 +38,8 @@ public class IPL_Client {
 					break;
 				}
 				case 2: {
-
+					
+							System.out.println("Thank You For Visit.......!");
 					break;
 
 				}
